@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vikadata</title>
+    <style>
+     /** global style */
+     * {
+      padding: 0;
+      margin: 0;
+    }
+    a {
+      text-decoration: none;
+    }
+
+    /** common */
+    .btn-login {
+      background-color: #7B67EE; 
+      border: 1px solid #7B67EE;
+      color: white;
+      padding: 10px 24px; 
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .btn-login:hover {
+      opacity: 0.8;
+    }
+
+    /** container */
+    .container{
+      background: linear-gradient(180deg, #06132B 0%, #384152 100%);
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+    }
+    .container .wrapper {
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+    /** header */
+    .header-container {
+      background-color: #06132B;
+      position: relative;
+      z-index: 1000;
+    }
+    .header {
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header .logo img {
+      width: 120px;
+      height: auto;
+    }
+
+
+    /** body */
+    .body {
+      height: calc(100vh -  170px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .body .body-left .title {
+      color: #fff;
+      font-size: 48px;
+    }
+    .body .body-left .min-title {
+      color: #fff;
+      font-size: 48px;
+    }
+    .body .body-left .desc {
+      margin-top: 18px;
+      margin-bottom: 30px;
+      color: #7B67EE;
+      font-size: 30px;
+      letter-spacing: 12px
+    }
+    .body .body-right{
+      display: flex;
+      align-items: center;
+    }
+    .body .body-right img{
+      width: 500px;
+      height: auto;
+      position: relative;
+      z-index: 10000;
+    }
+    .body .body-bg {
+      position: fixed;
+      width: 1000px;
+      height: 800px;
+      left: calc(100vw - 600px);
+      top: -300px;
+      background: linear-gradient(117.54deg, rgba(10, 23, 47, 0) 22.94%, #7E67FF 87.88%);
+      border-radius: 141px;
+      transform: rotate(20.68deg);
+    }
+
+    /** footer */
+    .footer p{
+      color: #8A9EC3;
+      font-size: 16px;
+      text-align: center;
+      line-height: 30px;
+    }
+
+    .footer p a{
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header-container">
+      <div class="wrapper">
+        <div class="header">
+          <div class="logo">
+            <img src="https://s1.vika.cn/space/2022/06/15/ac83f3a536e143a0a88e505b865c27c5?attname=%E8%B5%84%E6%BA%90%2081.svg" alt="维格表"/>
+          </div>
+          <div class="user">
+            <a  href = "https://vika.cn/login/" >
+              <button class="btn-login">登录使用</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="body">
+        <div class="body-left">
+          <h3 class="title">vika维格表</h3>
+          <h5 class="min-title">面向API的多维表格</h5>
+          <p class="desc">极致易用的低代码平台</p>
+          <a  href = "https://vika.cn/login/" >
+            <p><button class="btn-login">立即登录</button></p>
+          </a>
+        </div>
+        <div class="body-right">
+          <img src="https://s1.vika.cn/space/2022/10/28/31457d5abfff495a9e44f9cb77c575af?attname=Group-25687%20(1).png" alt="维格表" class="ads"/>
+        </div>
+        <div class="body-bg"></div>
+      </div>
+      <div class="footer">
+        <p>此产品由西云数据在亚马逊云科技Marketplace上代理销售，请填写<a href="https://contessa-awsmarketplace.amazonaws.cn/asset/PurchaseRequestForm.docx">购买请求单</a>以确认您的购买数量和合约时间，并将其通过订阅此产品的账户关联邮箱地址发送至mporder@nwcdcloud.cn进行订购，详情可致电10100966-8-2。</p>
+      </div>
+    </div>
+  </div>
+    
+</body>
+</html>
